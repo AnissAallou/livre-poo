@@ -1,5 +1,9 @@
 package book;
 
+/**
+ * 
+ * @author Aniss
+ */
 public class Livre {
 	public int id;
 	public String titre;
@@ -7,6 +11,7 @@ public class Livre {
 	public int prix;
 	public static int count;
 	
+	// accesseurs (getters)
 	
 	public int getId(int id) {
 		return id;
@@ -24,6 +29,9 @@ public class Livre {
 		return prix;
 	}
 	
+	
+	// mutateurs (setters)
+	
 	public void setId(int id) {
 		this.id = id;
 	}
@@ -40,6 +48,8 @@ public class Livre {
 		this.prix = prix;
 	}
 	
+	// constructeur de la classe Livre 
+	
 	public Livre(String titre, String auteur, int prix) {
 		this.id = ++count;
 		this.titre = titre;
@@ -47,9 +57,10 @@ public class Livre {
 		this.prix = prix;
 	}
 	
+	// méthode qui affiche le contenu du tableau les caractéristiques de chacun des livres
 	public String toString() {
 		return "Le prix du livre " + this.titre + " de l'auteur " + this.auteur
-				+ " est :" + this.prix + " �";
+				+ " est :" + this.prix + " €";
 	}
 
 
