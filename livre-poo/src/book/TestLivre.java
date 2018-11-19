@@ -20,11 +20,18 @@ public class TestLivre {
 			livres[i] = new Livre(titre, auteur, prix);
 		}
 		sc.close();
-		for (Livre l : livres) {
-			System.out.println(l);
+		
+		for (Livre livre : livres) {
+			System.out.println(livre);
 		}
+		
  
 		System.out.println("Le nombre de livres est : " + Livre.count);
+	}
+
+	private static void foreach() {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
