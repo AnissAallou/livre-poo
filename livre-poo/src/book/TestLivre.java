@@ -29,9 +29,5 @@ public class TestLivre {
 		System.out.println("Le nombre de livres est : " + Livre.count);
 	}
 
-	private static void foreach() {
-		// TODO Auto-generated method stub
-		
-	}
 
 }
